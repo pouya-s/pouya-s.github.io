@@ -8,73 +8,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome Page</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    body {
-      background-color: #f8f9fa;
-    
-    }
-    .jumbotron {
-      background-color: #343a40;
-      color: #ffffff;
-      padding: 80px;
-      margin-bottom: 0;
-    }
-    .footer {
-      background-color: #343a40;
-      color: #ffffff;
-      padding: 20px 0;
-      text-align: center;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-    .table {
-      border: 2px solid black; 
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+
+        }
+
+        .jumbotron {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 80px;
+            margin-bottom: 0;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .table {
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        #typing-text {
+            font-family: monospace;
+            font-size: 24px;
+            white-space: pre-wrap; /* Preserve line breaks in the text */
+        }
+    </style>
 </head>
 <body>
-  <div class="jumbotron text-center">
-    <h1>Welcome😊</h1>
-    <p>Here are the links:</p>
-  </div>
+<div class="jumbotron text-center">
+    <div id="typing-text"></div>
+</div>
 
-  <div class="container mt-5">
+<div class="container mt-5">
     <table class="table">
-      <thead class="thead-dark">
+        <thead class="thead-dark">
         <tr>
-          <th>Link Name</th>
-          <th>URL</th>
+            <th>Link Name</th>
+            <th>URL</th>
         </tr>
-      </thead>
-      <tbody>
+        </thead>
+        <tbody>
         <tr>
-          <td>Assignment 1 </td>
-          <td><a href="./assignment1/index.html">Please Click</a></td>
-        </tr>
-	 <tr>
-          <td>Assignment 1 Part 2 </td>
-          <td><a href="./assignment1_2/index.html">Please Click</a></td>
+            <td>Assignment 1</td>
+            <td><a href="./assignment1/index.html">Please Click</a></td>
         </tr>
         <tr>
-          <td>Assignment 2 Part 1 </td>
-          <td><a href="./assignment2/index.html">Please Click</a></td>
+            <td>Assignment 1 Part 2</td>
+            <td><a href="./assignment1_2/index.html">Please Click</a></td>
         </tr>
-      </tbody>
+        <tr>
+            <td>Assignment 2 Part 1</td>
+            <td><a href="./assignment2/index.html">Please Click</a></td>
+        </tr>
+        <tr>
+            <td>Assignment 2 Part 2</td>
+            <td><a href="./assignment2_1/index.html">Please Click</a></td>
+        </tr>
+        </tbody>
     </table>
-  </div>
+</div>
 
-  <div class="footer">
+<div class="footer">
     <p>Pouya Shahrdami</p>
-  </div>
+</div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // JavaScript code (same as before)
+    function typeWriter(text, elementId, typingSpeed = 50, delay = 1000) {
+        let index = 0;
+        const targetElement = document.getElementById(elementId); // Get the target element
+
+        function type() {
+            if (index < text.length) {
+                targetElement.textContent += text.charAt(index); // Add the next character
+                index++;
+                setTimeout(type, typingSpeed); // Schedule the next character
+            } else {
+                setTimeout(reset, delay); // Schedule a reset (optional)
+            }
+        }
+
+        function reset() { // Clear the text (optional)
+            targetElement.textContent = "";
+            index = 0;
+            setTimeout(type, typingSpeed); // Restart typing
+        }
+
+        type(); // Start the typing effect
+    }
+
+    const textToType = "Welcome😊\n Here are the links:\n";
+    const elementId = "typing-text";
+    typeWriter(textToType, elementId);
+
+
+</script>
 </body>
 </html>
