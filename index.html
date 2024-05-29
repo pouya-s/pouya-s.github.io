@@ -106,7 +106,7 @@
         }
 
         function reset() { // Clear the text (optional)
-            targetElement.textContent = "";
+            targetElement.textContent = "  ";
             index = 0;
             setTimeout(type, typingSpeed); // Restart typing
         }
@@ -114,7 +114,7 @@
         type(); // Start the typing effect
     }
 
-    const textToType = "Welcome😊\n Here are the links:\n";
+    const textToType = "Welcome😊 Here are the links:\n";
     const elementId = "typing-text";
     typeWriter(textToType, elementId);
 
