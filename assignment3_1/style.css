@@ -1,0 +1,45 @@
+/*
+Name: Pouya Shahrdami
+File: index.html
+Date: 5-06-2024
+Assignment 3 part 1
+*/
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+h1 {
+    color: #F768B3;
+    font-size: 2em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-bottom: 10px dotted #813380;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.job-title {
+    color: #999999;
+    font-weight: bold;
+}
+
+a:link,
+a:visited {
+    color: #fb6542;
+}
+
+a:hover { /* change a color when user hover*/
+    text-decoration: none;
+    color: green;
+}
+
+ul { /* adding border as mentioned    padding size was optional*/
+    border: 5px solid #813380;
+    background: #EEEEEE;
+    padding: 20px;
+}
