@@ -25,16 +25,6 @@
             margin-bottom: 0;
         }
 
-        .footer {
-            background-color: #343a40;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
         .table {
             border: 2px solid black;
             text-align: center;
@@ -44,6 +34,42 @@
             font-family: monospace;
             font-size: 24px;
             white-space: pre-wrap; /* Preserve line breaks in the text */
+        }
+
+        a {
+            text-decoration: none;
+            border: 1px #343a40;
+            border-radius: 7px;
+            transition: all .5s ease;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            padding: 16px;
+            width: 150px;
+            height: 100%;
+
+        }
+
+        a:hover {
+
+            color: #343a40;
+            background-color: #fff;
+            text-decoration: none;
+        }
+
+        a:after {
+            content: '✔️';
+            position: absolute;
+            opacity: 0;
+            top: 12px;
+            right: -1px;
+            transition: 0.5s;
+        }
+
+        a:hover:after {
+            opacity: 1;
+            right: 10px;
         }
     </style>
 </head>
@@ -62,27 +88,40 @@
         </thead>
         <tbody>
         <tr>
-            <td>Assignment 1</td>
+            <td>Assignment 1 <b>Marked</b>✅</td>
             <td><a href="./assignment1/index.html">Please Click</a></td>
         </tr>
         <tr>
-            <td>Assignment 1 Part 2</td>
+            <td>Assignment 1 p 2 <b>Marked</b>✅</td>
             <td><a href="./assignment1_2/index.html">Please Click</a></td>
         </tr>
         <tr>
-            <td>Assignment 2 Part 1 🆕</td>
+            <td>Assignment 2 p 1 🆕</td>
             <td><a href="./assignment2/index.html">Please Click</a></td>
         </tr>
         <tr>
             <td>Assignment 2 Part 2🆕</td>
             <td><a href="./assignment2_1/index.html">Please Click</a></td>
         </tr>
+        <tr>
+            <td>Assignment 3 Part 1🆕</td>
+            <td><a href="./assignment3_1/index.html">Please Click</a></td>
+        </tr>
+        <tr>
+            <td>Assignment 3 Part 2🆕</td>
+            <td><a href="./assignment3_2/index.html">Please Click</a></td>
+        </tr>
+        <tr>
+            <td>Assignment 3 Part 3🆕</td>
+            <td><a href="./assignment3_3/index.html">Please Click</a></td>
+        </tr>
+        <tr>
+            <td>Assignment 3 Part 4🆕</td>
+            <td><a href="./assignment3_4/index.html">Please Click</a></td>
+        </tr>
+
         </tbody>
     </table>
-</div>
-
-<div class="footer">
-    <p>Pouya Shahrdami</p>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
