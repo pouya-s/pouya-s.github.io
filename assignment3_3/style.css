@@ -1,0 +1,75 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    font-family: "Wide", serif;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header, section, aside, nav, footer {
+    padding: 20px;
+    font-family: Rockwell Extra Bold, Rockwell Bold, monospace;
+
+}
+
+/* header and footer */
+
+header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+    text-align: center;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+nav ul {
+    text-decoration: none;
+    color: red;
+    text-align: center;
+}
+
+nav li {
+    text-decoration: none;
+    list-style: none;
+    border: 2px solid #C19F9E;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #C19F9E;
+}
+
+a {
+    color: #C19F9E;
+
+}
+section img{
+    width: 15px;
+}
