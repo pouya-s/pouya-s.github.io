@@ -1,3 +1,9 @@
+/*
+ 	Name: Pouya Shahrdami
+	File: index.html
+	Date: 8-07-2024
+	Assignment 4 part 2
+ */
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
