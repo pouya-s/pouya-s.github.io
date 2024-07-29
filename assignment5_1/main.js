@@ -1,3 +1,9 @@
+/*
+	Name: Pouya Shahrdami
+	File: main.js
+	Date: 29-07-2024
+	Assignment 5 part 1
+*/
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
