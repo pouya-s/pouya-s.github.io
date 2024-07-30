@@ -212,7 +212,6 @@ audio {
 .comment-form label {
     align-self: center;
     flex: 2;
-    text-align: right;
 }
 
 .comment-form input {
