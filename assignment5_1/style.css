@@ -199,7 +199,6 @@ audio {
 }
 
 
-
 .comment-form {
     margin-bottom: 3rem;
 }
@@ -261,4 +260,20 @@ audio {
 
 .searchbar-label {
     display: none;
+}
+
+.transcribe {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.transcribe-button {
+    background: #333;
+    color: white;
+    font-size: 1.6rem;
+    height: 32px;
+}
+
+.transcribe-button:hover {
+    background: #171717;
 }
